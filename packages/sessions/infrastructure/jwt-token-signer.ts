@@ -178,3 +178,4 @@ function toVerificationError(error: unknown): TokenVerificationError {
   // risk treating an unexpected failure as a valid token.
   return TokenVerificationError.malformed("Access token could not be verified.", { cause: error });
 }
+﻿export class JwtTokenSigner {}
